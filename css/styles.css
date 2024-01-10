@@ -4,16 +4,45 @@ body {
   background-color: #ffffff;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 a {
   text-decoration: none;
 }
 
 ul {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
-
+.section {
+  padding-left: 120px;
+  padding-right: 120px;
+}
 header {
   background-color: #ffffff;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.container {
+  width: 100%;
+  max-width: 1158px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
 }
 
 .header-logo {
@@ -24,11 +53,22 @@ header {
   line-height: 1.17; /* 116.667% */
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-right: 76px;
 }
 
 .header-logo span {
   font-family: 'Raleway', sans-serif;
   color: #2e2f42;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-nav {
+  display: flex;
+  gap: 40px;
 }
 
 .header-nav-list {
@@ -37,6 +77,9 @@ header {
   font-weight: 500;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
+  display: block;
+  padding: 24px 0;
+  gap: 40px;
 }
 
 .header-nav-list:hover,
@@ -47,6 +90,18 @@ header {
 
 address {
   font-style: normal;
+  margin-left: auto;
+}
+
+.address-link {
+  display: flex;
+  gap: 40px;
+}
+
+.header-address {
+  display: flex;
+  gap: 40px;
+  align-items: center;
 }
 
 .header-address-link {
@@ -65,8 +120,22 @@ address {
 
 .hero {
   background-color: #2e2f42;
+  max-height: 600px;
+  padding-bottom: 120px;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 .hero-title {
   color: #ffffff;
   font-size: 56px;
@@ -74,10 +143,19 @@ address {
   line-height: 1.07; /* 107.143% */
   letter-spacing: 0.02em;
   text-align: center;
+  padding: 188px 316px 292px;
+}
+
+.button-hero {
+  display: flex;
+  align-items: center;
+  margin-left: 500px;
+  margin-bottom: 356px;
 }
 
 button {
   background-color: #4d5ae5;
+  border: none;
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
@@ -85,6 +163,9 @@ button {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.04em;
   cursor: pointer;
+  padding: 16px 32px;
+  border-radius: 4px;
+  position: absolute;
 }
 
 button:hover,
@@ -95,6 +176,19 @@ button:focus {
 .section-why-us,
 .section-portfolio {
   background-color: #ffffff;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.list-why-us {
+  display: flex;
+  padding: 120px auto;
+  max-height: 104px;
+  gap: 8px;
+}
+
+.item-why-us {
+  width: calc((100% - 8px * 2) / 4);
 }
 
 .list-item-title {
@@ -115,6 +209,15 @@ button:focus {
 
 .section-team {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.team-item {
+  display: flex;
+  padding-bottom: 32px;
+  align-items: center;
+  gap: 32px;
 }
 
 .section-team-list {
@@ -129,6 +232,7 @@ button:focus {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
+  padding-bottom: 72px;
 }
 
 .team-list-title {
@@ -137,6 +241,8 @@ button:focus {
   font-weight: 500;
   line-height: 1.2; /* 120% */
   letter-spacing: 0.02em;
+  text-align: center;
+  padding-top: 32px;
 }
 
 .team-list-text {
@@ -145,8 +251,18 @@ button:focus {
   font-weight: 400;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
+  text-align: center;
+  padding-bottom: 32px;
 }
 
+.portfolio-item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+}
+.portfolio-list {
+  border: 1px solid #e7e9fc;
+}
 .portfolio-title {
   color: #2e2f42;
   font-size: 36px;
@@ -155,6 +271,7 @@ button:focus {
   letter-spacing: 0.02em;
   text-transform: capitalize;
   text-align: center;
+  padding-bottom: 72px;
 }
 
 .portfolio-list-title {
@@ -163,6 +280,8 @@ button:focus {
   font-weight: 500;
   line-height: 1.2; /* 120% */
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-left: 16px;
 }
 
 .portfolio-list-text {
@@ -171,10 +290,15 @@ button:focus {
   font-weight: 400;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
+  padding-bottom: 32px;
+  padding-left: 16px;
 }
 
 .footer {
   background-color: #2e2f42;
+  max-height: 312px;
+  padding-top: 100px;
+  padding-left: auto;
 }
 
 .link-logo {
@@ -185,6 +309,7 @@ button:focus {
   line-height: 1.17; /* 116.667% */
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  padding-bottom: 18px;
 }
 
 .logo-span {
@@ -197,4 +322,7 @@ button:focus {
   font-weight: 400;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
+  padding-top: 18px;
+  padding-bottom: 100px;
+  max-width: 264px;
 }
