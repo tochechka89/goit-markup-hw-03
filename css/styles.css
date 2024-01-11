@@ -127,18 +127,6 @@ address {
   padding: 188px 0;
 }
 
-.visually-hidden {
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
 .hero-title {
   color: #ffffff;
   font-size: 56px;
@@ -191,6 +179,19 @@ button:focus {
   gap: 24px;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .item-why-us {
   flex-basis: calc((100% - 3 * 24px) / 4);
 }
@@ -222,7 +223,7 @@ button:focus {
   display: flex;
   padding-bottom: 32px;
   align-items: center;
-  gap: 32px;
+  gap: 24px;
 }
 
 .section-team-list {
