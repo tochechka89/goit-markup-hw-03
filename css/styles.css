@@ -190,6 +190,8 @@ img {
 .advantages-item {
   display: flex;
   gap: 24px;
+  margin: 0;
+  padding-left: 0;
 }
 .advantages-list {
   flex-basis: calc((100% - 3 * 24px) / 4);
@@ -210,6 +212,8 @@ img {
 }
 .team {
   background-color: #f4f4fd;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .team-title,
 .portfolio-title {
@@ -227,6 +231,8 @@ img {
   padding-bottom: 32px;
   align-items: center;
   gap: 24px;
+  margin: 0;
+  padding-left: 0;
 }
 .team-list {
   background-color: #ffffff;
