@@ -214,7 +214,7 @@ img {
 }
 .team {
   background-color: #f4f4fd;
-  padding-top: 120px;
+  padding: 120px 0;
 }
 .team-title,
 .portfolio-title {
@@ -260,6 +260,11 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+}
+
+.team-name,
+.team-text {
+  text-align: center;
 }
 
 .portfolio-item {
