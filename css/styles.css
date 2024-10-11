@@ -187,13 +187,12 @@ img {
 
 .advantages-item {
   display: flex;
-  padding: 120px auto;
   max-height: 104px;
   gap: 24px;
 }
-.advantages-list:first-child {
-  flex-basis: calc((100% - 72px) / 4);
-}
+/*.advantages-list {
+  width: calc((100% - 3 * 24px) / 4);
+}*/
 .advantages-title-list {
   font-weight: 500;
   font-size: 20px;
@@ -233,6 +232,7 @@ img {
 .team-list {
   background-color: #ffffff;
   border-radius: 0px 0px 4px 4px;
+  width: calc((100% - 3 * 24px) / 4);
 }
 
 .worker {
