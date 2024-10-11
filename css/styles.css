@@ -26,6 +26,10 @@ ul {
   list-style: none;
 }
 
+img {
+  display: block;
+}
+
 .section {
   padding-left: 120px;
   padding-right: 120px;
@@ -128,6 +132,7 @@ ul {
   text-align: center;
   color: #fff;
   max-width: 496px;
+  margin: 0 auto;
 }
 
 .hero-button {
@@ -166,6 +171,20 @@ ul {
   visibility: hidden;
   opacity: 0;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .advantages-item {
   display: flex;
   padding: 120px auto;
@@ -173,7 +192,7 @@ ul {
   gap: 24px;
 }
 .advantages-list {
-  flex-basis: calc((100% - 3 * 24px) / 4);
+  width: calc((100% - 72px) / 4);
 }
 .advantages-title-list {
   font-weight: 500;
@@ -244,6 +263,7 @@ ul {
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
+  padding: 0;
 }
 
 .portfolio-list {
@@ -260,6 +280,10 @@ ul {
   background-color: #2e2f42;
   max-height: 312px;
   padding: 100px 0;
+}
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
 }
 .logo-footer {
   color: #f4f4fd;
