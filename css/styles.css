@@ -189,8 +189,6 @@ img {
 
 .advantages-item {
   display: flex;
-  padding: 120px auto;
-  max-height: 104px;
   gap: 24px;
 }
 .advantages-list {
@@ -212,8 +210,6 @@ img {
 }
 .team {
   background-color: #f4f4fd;
-  padding-top: 120px;
-  padding-bottom: 120px;
 }
 .team-title,
 .portfolio-title {
