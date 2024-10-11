@@ -191,8 +191,8 @@ img {
   max-height: 104px;
   gap: 24px;
 }
-.advantages-list {
-  width: calc((100% - 72px) / 4);
+.advantages-list:first-child {
+  flex-basis: calc((100% - 72px) / 4);
 }
 .advantages-title-list {
   font-weight: 500;
